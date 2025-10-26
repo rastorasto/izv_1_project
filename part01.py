@@ -94,7 +94,9 @@ def plot_wave(
         extent=(x.min(), x.max(), y.min(), y.max()),
         # Changed where the graph starts withouth this it would be upside down
         origin="lower",
-        cmap="viridis"
+        cmap="viridis",
+        vmin=-1,
+        vmax=1
     )
     fig.colorbar(im, ax=ax, label="Amplituda vlny")
 
